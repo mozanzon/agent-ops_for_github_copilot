@@ -16,6 +16,5 @@ This folder stores reusable orchestration assets for future agent/tool workflows
 3. Add verification evidence in `todo.md`.
 4. On any correction, append an entry in `tasks/lessons.md`.
 
----
 
-Note: README merged with remote repository during push; kept local agent-ops README content.
+
