@@ -1,0 +1,94 @@
+name: Agent Workflow Orchestration
+version: 1
+last_updated: 2026-03-04
+owner: engineering
+
+intent:
+  summary: >-
+    Enforce disciplined planning, execution, verification, and continuous improvement
+    for autonomous coding agents.
+  principles:
+    - Simplicity first
+    - Root-cause fixes only
+    - Minimal-impact changes
+
+workflow:
+  plan_mode_default:
+    enabled: true
+    when:
+      - non_trivial_task
+      - step_count_gte_3
+      - architectural_decision_needed
+    requirements:
+      - enter_plan_mode_before_implementation
+      - include_verification_steps_in_plan
+      - write_detailed_specs_upfront
+      - stop_and_replan_if_execution_derails
+
+  subagent_strategy:
+    enabled: true
+    requirements:
+      - use_subagents_for_research_and_exploration
+      - use_subagents_for_parallel_analysis
+      - one_task_per_subagent
+      - prefer_subagents_on_complex_problems
+
+  self_improvement_loop:
+    enabled: true
+    trigger:
+      - user_correction_received
+    requirements:
+      - update_tasks_lessons_md_with_pattern
+      - add_prevention_rule_for_same_mistake
+      - iterate_lessons_until_error_rate_drops
+      - review_relevant_lessons_at_session_start
+
+  verification_before_done:
+    enabled: true
+    requirements:
+      - never_mark_complete_without_proof
+      - run_tests_and_validate_logs_when_available
+      - demonstrate_correctness
+      - compare_before_after_behavior_when_relevant
+      - quality_gate_staff_engineer_approval_bar
+
+  demand_elegance:
+    enabled: true
+    mode: balanced
+    requirements:
+      - for_non_trivial_changes_evaluate_more_elegant_solution
+      - if_solution_is_hacky_reimplement_elegantly
+      - avoid_overengineering_simple_obvious_fixes
+      - challenge_own_solution_before_presenting
+
+  autonomous_bug_fixing:
+    enabled: true
+    requirements:
+      - fix_reported_bugs_without_hand_holding
+      - use_logs_errors_failing_tests_as_evidence
+      - minimize_user_context_switching
+      - proactively_fix_failing_ci_tests
+
+task_management:
+  required:
+    - write_plan_to_tasks_todo_md_with_checkable_items
+    - verify_plan_before_implementation
+    - track_progress_by_marking_items_complete
+    - summarize_changes_at_each_step
+    - add_review_section_to_tasks_todo_md
+    - update_tasks_lessons_md_after_corrections
+
+quality_checks:
+  pre_done_checklist:
+    - tests_executed_or_reason_documented
+    - logs_checked_or_reason_documented
+    - scope_limited_to_required_changes
+    - root_cause_addressed
+    - no_known_regressions_from_change
+
+artifacts:
+  todo_file: .github/agent-ops/tasks/todo.md
+  lessons_file: .github/agent-ops/tasks/lessons.md
+  agents_folder: .github/agent-ops/agents
+  tools_folder: .github/agent-ops/tools
+  skills_folder: .github/agent-ops/skills
