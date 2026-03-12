@@ -1,9 +1,6 @@
 ---
 name: Auth Specialist Agent
-description: >
-  Web security and authentication expert. Use me for auth flows,
-  sessions, permissions, and security hardening. Trigger: 'add login',
-  'implement OAuth', 'secure this route', 'add RBAC'.
+description: "Web security and authentication expert. Use me for auth flows, sessions, permissions, and security hardening. Trigger: 'add login', 'implement OAuth', 'secure this route', 'add RBAC'."
 tools: [read, edit, search, runTests]
 ---
 

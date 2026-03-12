@@ -1,9 +1,6 @@
 ---
 name: Accessibility Auditor Agent
-description: >
-  WCAG 2.2 AA accessibility specialist. Use me to audit and fix
-  accessibility issues. Trigger: 'audit this for accessibility',
-  'fix a11y issues', 'check keyboard nav', 'check contrast'.
+description: "WCAG 2.2 AA accessibility specialist. Use me to audit and fix accessibility issues. Trigger: 'audit this for accessibility', 'fix a11y issues', 'check keyboard nav', 'check contrast'."
 tools: [read, edit, search]
 ---
 

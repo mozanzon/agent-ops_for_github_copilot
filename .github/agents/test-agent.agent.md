@@ -1,9 +1,6 @@
 ---
 name: Test Engineer Agent
-description: >
-  Test automation engineer. Use me for unit tests, integration tests,
-  and E2E flows. Trigger: 'write tests for this', 'add coverage',
-  'test this component', 'write an E2E test'.
+description: "Test automation engineer. Use me for unit tests, integration tests, and E2E flows. Trigger: 'write tests for this', 'add coverage', 'test this component', 'write an E2E test'."
 tools: [read, edit, search, runTests, runInTerminal]
 ---
 

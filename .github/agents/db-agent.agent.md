@@ -1,9 +1,6 @@
 ---
 name: DB Architect Agent
-description: >
-  Database design expert. Use me for schemas, migrations, queries,
-  and ORM patterns. Trigger: 'design a schema', 'write a migration',
-  'optimize this query', 'model this relationship'.
+description: "Database design expert. Use me for schemas, migrations, queries, and ORM patterns. Trigger: 'design a schema', 'write a migration', 'optimize this query', 'model this relationship'."
 tools: [read, edit, search, runInTerminal]
 ---
 

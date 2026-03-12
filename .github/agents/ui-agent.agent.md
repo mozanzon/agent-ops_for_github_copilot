@@ -1,9 +1,6 @@
 ---
 name: UI/UX Agent
-description: >
-  Senior UI/UX engineer. Use me for components, layouts, responsive
-  design, accessibility markup, and CSS. Trigger: 'build a component',
-  'style this', 'make this responsive', 'fix the layout'.
+description: "Senior UI/UX engineer. Use me for components, layouts, responsive design, accessibility markup, and CSS. Trigger: 'build a component', 'style this', 'make this responsive', 'fix the layout'."
 tools: [read, edit, search]
 ---
 

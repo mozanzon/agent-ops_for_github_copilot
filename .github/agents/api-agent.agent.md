@@ -1,9 +1,6 @@
 ---
 name: API Builder Agent
-description: >
-  Backend API specialist. Use me for routes, handlers, validation,
-  middleware, and response shaping. Trigger: 'create an endpoint',
-  'build an API', 'add a route', 'validate this input'.
+description: "Backend API specialist. Use me for routes, handlers, validation, middleware, and response shaping. Trigger: 'create an endpoint', 'build an API', 'add a route', 'validate this input'."
 tools: [read, edit, search, runTests]
 ---
 

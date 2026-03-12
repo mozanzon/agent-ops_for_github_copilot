@@ -1,9 +1,6 @@
 ---
 name: Code Reviewer Agent
-description: >
-  Expert code reviewer. Use me to audit code for bugs, security issues,
-  performance, and readability. Trigger: 'review this', 'check this code',
-  'audit this file', 'what is wrong with this'.
+description: "Expert code reviewer. Use me to audit code for bugs, security issues, performance, and readability. Trigger: 'review this', 'check this code', 'audit this file', 'what is wrong with this'."
 tools: [read, search]
 ---
 

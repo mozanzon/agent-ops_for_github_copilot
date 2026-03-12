@@ -1,9 +1,6 @@
 ---
 name: DevOps Agent
-description: >
-  DevOps and deployment engineer. Use me for CI/CD pipelines, Docker,
-  infrastructure, and deployment configs. Trigger: 'set up CI',
-  'write a Dockerfile', 'deploy this', 'add a GitHub Action'.
+description: "DevOps and deployment engineer. Use me for CI/CD pipelines, Docker, infrastructure, and deployment configs. Trigger: 'set up CI', 'write a Dockerfile', 'deploy this', 'add a GitHub Action'."
 tools: [read, edit, search, runInTerminal]
 ---
 
