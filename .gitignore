@@ -1,0 +1,7 @@
+# Local working layer - never pushed
+local/
+*.local.md
+
+# OS
+.DS_Store
+Thumbs.db

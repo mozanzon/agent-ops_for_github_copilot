@@ -1,0 +1,27 @@
+name: Agent Ops Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate agent profiles exist
+        run: |
+          echo 'Checking .github/agents/ for .agent.md files...'
+          ls .github/agents/*.agent.md
+
+      - name: Validate templates exist
+        run: |
+          echo 'Checking tasks/ for template files...'
+          ls tasks/*.template.md
+
+      - name: Confirm local/ is gitignored
+        run: |
+          git check-ignore -v local/ && echo 'OK - local/ is gitignored' \
+          || echo 'WARNING - local/ is not gitignored, check .gitignore'
